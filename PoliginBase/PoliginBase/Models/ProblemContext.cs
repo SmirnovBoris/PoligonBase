@@ -6,8 +6,8 @@ using System.Web;
 
 namespace PoliginBase.Models
 {
-    public class ProblemTemplateContext
+    public class ProblemContext : DbContext
     {
-        public DbSet<ProblemTemplate> Problems { get; set; }
+        public DbSet<Problem> Problems { get; set; }
     }
 }

@@ -1,21 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 
 namespace PoliginBase.Models
 {
-    public class ProblemTemplate
+    public class ProblemContext : DbContext
     {
-        [DataType(DataType.Text)]
-        public string name { get; set; }
-
-        [DataType(DataType.MultilineText)]
-        public string format { get; set; }
-        
-        [DataType(DataType.MultilineText)]
-        public string config { get; set; }
-
+        public DbSet<Problem> Problems { get; set; }
     }
 }

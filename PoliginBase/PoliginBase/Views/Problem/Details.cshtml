@@ -1,0 +1,36 @@
+﻿@model PoliginBase.Models.Problem
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Problem</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Format)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Format)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Config)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Config)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
