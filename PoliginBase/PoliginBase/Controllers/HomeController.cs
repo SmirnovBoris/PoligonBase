@@ -21,10 +21,10 @@ namespace PoliginBase.Controllers
 
             return View();
         }
-
-        public ActionResult Contact()
+        [Authorize]
+        public ActionResult Cat()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Just cat.";
 
             return View();
         }
